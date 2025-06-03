@@ -38,7 +38,7 @@ const Hero = () => {
               <div className="text-center">
                 <div className="bg-blue-100 w-12 h-12 rounded-lg flex items-center justify-center mx-auto mb-2">
                   <img 
-                    src="https://images.unsplash.com/photo-1615729947596-a598e5de0ab3?auto=format&fit=crop&w=100&q=80" 
+                    src="https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?auto=format&fit=crop&w=100&q=80" 
                     alt="Free Shipping"
                     className="w-8 h-8 rounded-full object-cover"
                   />
@@ -70,29 +70,29 @@ const Hero = () => {
                 <div className="grid grid-cols-2 gap-4">
                   <div className="bg-gray-100 rounded-lg h-32 overflow-hidden">
                     <img 
-                      src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?auto=format&fit=crop&w=300&q=80"
-                      alt="Product 1"
+                      src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=300&q=80"
+                      alt="Headphones"
                       className="w-full h-full object-cover"
                     />
                   </div>
                   <div className="bg-gray-100 rounded-lg h-32 overflow-hidden">
                     <img 
-                      src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=300&q=80"
-                      alt="Product 2"
+                      src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=300&q=80"
+                      alt="T-shirt"
                       className="w-full h-full object-cover"
                     />
                   </div>
                   <div className="bg-gray-100 rounded-lg h-32 overflow-hidden">
                     <img 
-                      src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=300&q=80"
-                      alt="Product 3"
+                      src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=300&q=80"
+                      alt="Smart Watch"
                       className="w-full h-full object-cover"
                     />
                   </div>
                   <div className="bg-gray-100 rounded-lg h-32 overflow-hidden">
                     <img 
-                      src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=300&q=80"
-                      alt="Product 4"
+                      src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&q=80"
+                      alt="Desk Lamp"
                       className="w-full h-full object-cover"
                     />
                   </div>

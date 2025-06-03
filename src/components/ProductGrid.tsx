@@ -11,14 +11,14 @@ const ProductGrid = ({ featured = false }: ProductGridProps) => {
   const [filterCategory, setFilterCategory] = useState("all");
   const [viewMode, setViewMode] = useState<"grid" | "list">("grid");
 
-  // Mock product data with Indian pricing and real images
+  // Mock product data with Indian pricing and matching images
   const allProducts = [
     {
       id: 1,
       name: "Premium Wireless Headphones",
       price: 15999,
       originalPrice: 19999,
-      image: "photo-1649972904349-6e44c42644a7",
+      image: "photo-1505740420928-5e560c06d30e", // Actual headphones image
       rating: 4.8,
       reviews: 124,
       category: "Electronics",
@@ -28,7 +28,7 @@ const ProductGrid = ({ featured = false }: ProductGridProps) => {
       id: 2,
       name: "Organic Cotton T-Shirt",
       price: 1299,
-      image: "photo-1488590528505-98d2b5aba04b",
+      image: "photo-1521572163474-6864f9cf17ab", // T-shirt image
       rating: 4.5,
       reviews: 89,
       category: "Clothing"
@@ -38,7 +38,7 @@ const ProductGrid = ({ featured = false }: ProductGridProps) => {
       name: "Smart Fitness Watch",
       price: 8999,
       originalPrice: 12999,
-      image: "photo-1581091226825-a6a2a5aee158",
+      image: "photo-1523275335684-37898b6baf30", // Watch image
       rating: 4.6,
       reviews: 156,
       category: "Electronics",
@@ -48,7 +48,7 @@ const ProductGrid = ({ featured = false }: ProductGridProps) => {
       id: 4,
       name: "Minimalist Desk Lamp",
       price: 2799,
-      image: "photo-1531297484001-80022131f5a1",
+      image: "photo-1507003211169-0a1dd7228f2d", // Desk lamp image
       rating: 4.3,
       reviews: 67,
       category: "Home"
@@ -57,7 +57,7 @@ const ProductGrid = ({ featured = false }: ProductGridProps) => {
       id: 5,
       name: "Premium Coffee Beans",
       price: 899,
-      image: "photo-1486312338219-ce68d2c6f44d",
+      image: "photo-1559056199-641a0ac8b55e", // Coffee beans image
       rating: 4.9,
       reviews: 203,
       category: "Food"
@@ -66,7 +66,7 @@ const ProductGrid = ({ featured = false }: ProductGridProps) => {
       id: 6,
       name: "Leather Wallet",
       price: 2499,
-      image: "photo-1500673922987-e212871fec22",
+      image: "photo-1553062407-98eeb64c6a62", // Wallet image
       rating: 4.7,
       reviews: 91,
       category: "Accessories"
@@ -75,7 +75,7 @@ const ProductGrid = ({ featured = false }: ProductGridProps) => {
       id: 7,
       name: "Wireless Charging Pad",
       price: 1599,
-      image: "photo-1506744038136-46273834b3fb",
+      image: "photo-1556306535-38febf6782e7", // Wireless charger image
       rating: 4.4,
       reviews: 78,
       category: "Electronics"
@@ -84,7 +84,7 @@ const ProductGrid = ({ featured = false }: ProductGridProps) => {
       id: 8,
       name: "Bamboo Phone Stand",
       price: 799,
-      image: "photo-1501854140801-50d01698950b",
+      image: "photo-1574944985070-8f3ebc6b2290", // Phone stand image
       rating: 4.2,
       reviews: 45,
       category: "Accessories"
