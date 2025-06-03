@@ -45,8 +45,12 @@ const ProductCard = ({ product }: ProductCardProps) => {
     <div className="group bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100">
       {/* Product Image */}
       <div className="relative overflow-hidden">
-        <div className="aspect-square bg-gray-100 flex items-center justify-center">
-          <ShoppingCart className="w-16 h-16 text-gray-300" />
+        <div className="aspect-square bg-gray-100">
+          <img 
+            src={`https://images.unsplash.com/${product.image}?auto=format&fit=crop&w=400&q=80`}
+            alt={product.name}
+            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+          />
         </div>
         
         {/* Overlay with actions */}
@@ -106,9 +110,9 @@ const ProductCard = ({ product }: ProductCardProps) => {
 
         {/* Price */}
         <div className="flex items-center space-x-2">
-          <span className="text-lg font-bold text-gray-900">${product.price}</span>
+          <span className="text-lg font-bold text-gray-900">₹{product.price}</span>
           {product.originalPrice && (
-            <span className="text-sm text-gray-500 line-through">${product.originalPrice}</span>
+            <span className="text-sm text-gray-500 line-through">₹{product.originalPrice}</span>
           )}
         </div>
 

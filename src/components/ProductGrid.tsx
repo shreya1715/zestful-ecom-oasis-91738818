@@ -1,4 +1,3 @@
-
 import { useState, useMemo } from "react";
 import ProductCard from "./ProductCard";
 import { Filter, Grid, List } from "lucide-react";
@@ -12,14 +11,14 @@ const ProductGrid = ({ featured = false }: ProductGridProps) => {
   const [filterCategory, setFilterCategory] = useState("all");
   const [viewMode, setViewMode] = useState<"grid" | "list">("grid");
 
-  // Mock product data
+  // Mock product data with Indian pricing and real images
   const allProducts = [
     {
       id: 1,
       name: "Premium Wireless Headphones",
-      price: 299,
-      originalPrice: 399,
-      image: "/placeholder.svg",
+      price: 15999,
+      originalPrice: 19999,
+      image: "photo-1649972904349-6e44c42644a7",
       rating: 4.8,
       reviews: 124,
       category: "Electronics",
@@ -28,8 +27,8 @@ const ProductGrid = ({ featured = false }: ProductGridProps) => {
     {
       id: 2,
       name: "Organic Cotton T-Shirt",
-      price: 49,
-      image: "/placeholder.svg",
+      price: 1299,
+      image: "photo-1488590528505-98d2b5aba04b",
       rating: 4.5,
       reviews: 89,
       category: "Clothing"
@@ -37,9 +36,9 @@ const ProductGrid = ({ featured = false }: ProductGridProps) => {
     {
       id: 3,
       name: "Smart Fitness Watch",
-      price: 199,
-      originalPrice: 249,
-      image: "/placeholder.svg",
+      price: 8999,
+      originalPrice: 12999,
+      image: "photo-1581091226825-a6a2a5aee158",
       rating: 4.6,
       reviews: 156,
       category: "Electronics",
@@ -48,8 +47,8 @@ const ProductGrid = ({ featured = false }: ProductGridProps) => {
     {
       id: 4,
       name: "Minimalist Desk Lamp",
-      price: 79,
-      image: "/placeholder.svg",
+      price: 2799,
+      image: "photo-1531297484001-80022131f5a1",
       rating: 4.3,
       reviews: 67,
       category: "Home"
@@ -57,8 +56,8 @@ const ProductGrid = ({ featured = false }: ProductGridProps) => {
     {
       id: 5,
       name: "Premium Coffee Beans",
-      price: 24,
-      image: "/placeholder.svg",
+      price: 899,
+      image: "photo-1486312338219-ce68d2c6f44d",
       rating: 4.9,
       reviews: 203,
       category: "Food"
@@ -66,8 +65,8 @@ const ProductGrid = ({ featured = false }: ProductGridProps) => {
     {
       id: 6,
       name: "Leather Wallet",
-      price: 89,
-      image: "/placeholder.svg",
+      price: 2499,
+      image: "photo-1500673922987-e212871fec22",
       rating: 4.7,
       reviews: 91,
       category: "Accessories"
@@ -75,8 +74,8 @@ const ProductGrid = ({ featured = false }: ProductGridProps) => {
     {
       id: 7,
       name: "Wireless Charging Pad",
-      price: 39,
-      image: "/placeholder.svg",
+      price: 1599,
+      image: "photo-1506744038136-46273834b3fb",
       rating: 4.4,
       reviews: 78,
       category: "Electronics"
@@ -84,8 +83,8 @@ const ProductGrid = ({ featured = false }: ProductGridProps) => {
     {
       id: 8,
       name: "Bamboo Phone Stand",
-      price: 29,
-      image: "/placeholder.svg",
+      price: 799,
+      image: "photo-1501854140801-50d01698950b",
       rating: 4.2,
       reviews: 45,
       category: "Accessories"

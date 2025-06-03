@@ -1,5 +1,5 @@
 
-import { ArrowRight, ShoppingBag } from "lucide-react";
+import { ArrowRight, ShoppingBag, Truck } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -37,10 +37,14 @@ const Hero = () => {
             <div className="grid grid-cols-3 gap-6 pt-8">
               <div className="text-center">
                 <div className="bg-blue-100 w-12 h-12 rounded-lg flex items-center justify-center mx-auto mb-2">
-                  <ShoppingBag className="w-6 h-6 text-blue-600" />
+                  <img 
+                    src="https://images.unsplash.com/photo-1615729947596-a598e5de0ab3?auto=format&fit=crop&w=100&q=80" 
+                    alt="Free Shipping"
+                    className="w-8 h-8 rounded-full object-cover"
+                  />
                 </div>
                 <p className="text-sm font-medium text-gray-900">Free Shipping</p>
-                <p className="text-xs text-gray-600">On orders over $100</p>
+                <p className="text-xs text-gray-600">On orders over ₹2000</p>
               </div>
               <div className="text-center">
                 <div className="bg-purple-100 w-12 h-12 rounded-lg flex items-center justify-center mx-auto mb-2">
@@ -64,17 +68,33 @@ const Hero = () => {
             <div className="bg-gradient-to-br from-blue-200 to-purple-200 rounded-2xl p-8 transform rotate-3 hover:rotate-0 transition-transform duration-500">
               <div className="bg-white rounded-xl p-6 shadow-xl">
                 <div className="grid grid-cols-2 gap-4">
-                  <div className="bg-gray-100 rounded-lg h-32 flex items-center justify-center">
-                    <ShoppingBag className="w-12 h-12 text-gray-400" />
+                  <div className="bg-gray-100 rounded-lg h-32 overflow-hidden">
+                    <img 
+                      src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?auto=format&fit=crop&w=300&q=80"
+                      alt="Product 1"
+                      className="w-full h-full object-cover"
+                    />
                   </div>
-                  <div className="bg-gray-100 rounded-lg h-32 flex items-center justify-center">
-                    <ShoppingBag className="w-12 h-12 text-gray-400" />
+                  <div className="bg-gray-100 rounded-lg h-32 overflow-hidden">
+                    <img 
+                      src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=300&q=80"
+                      alt="Product 2"
+                      className="w-full h-full object-cover"
+                    />
                   </div>
-                  <div className="bg-gray-100 rounded-lg h-32 flex items-center justify-center">
-                    <ShoppingBag className="w-12 h-12 text-gray-400" />
+                  <div className="bg-gray-100 rounded-lg h-32 overflow-hidden">
+                    <img 
+                      src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=300&q=80"
+                      alt="Product 3"
+                      className="w-full h-full object-cover"
+                    />
                   </div>
-                  <div className="bg-gray-100 rounded-lg h-32 flex items-center justify-center">
-                    <ShoppingBag className="w-12 h-12 text-gray-400" />
+                  <div className="bg-gray-100 rounded-lg h-32 overflow-hidden">
+                    <img 
+                      src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=300&q=80"
+                      alt="Product 4"
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                 </div>
               </div>
@@ -84,7 +104,8 @@ const Hero = () => {
             <div className="absolute -top-4 -right-4 bg-yellow-400 text-black px-4 py-2 rounded-full text-sm font-bold animate-bounce">
               New Arrivals!
             </div>
-            <div className="absolute -bottom-4 -left-4 bg-green-400 text-black px-4 py-2 rounded-full text-sm font-bold">
+            <div className="absolute -bottom-4 -left-4 bg-green-400 text-black px-4 py-2 rounded-full text-sm font-bold flex items-center gap-1">
+              <Truck className="w-4 h-4" />
               Free Shipping
             </div>
           </div>
