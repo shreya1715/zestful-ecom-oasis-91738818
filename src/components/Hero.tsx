@@ -28,13 +28,13 @@ const Hero = ({ onViewCollectionClick }: HeroProps) => {
               <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight">
                 Luxury
                 <span className="bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent">
-                  {" "}Purse{" "}
+                  {" "}Perfume{" "}
                 </span>
                 Collection
               </h1>
               <p className="text-xl text-gray-600 leading-relaxed">
-                Discover our exquisite collection of women's luxury purses. Crafted with premium materials
-                and timeless elegance for the modern woman.
+                Discover our exquisite collection of branded luxury perfumes. Premium fragrances
+                from world-renowned designers crafted for the discerning individual.
               </p>
             </div>
 
@@ -60,13 +60,13 @@ const Hero = ({ onViewCollectionClick }: HeroProps) => {
               <div className="text-center">
                 <div className="bg-blue-100 w-12 h-12 rounded-lg flex items-center justify-center mx-auto mb-2">
                   <img 
-                    src="https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?auto=format&fit=crop&w=100&q=80" 
+                    src="https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?auto=format&fit=crop&w=100&q=80" 
                     alt="Free Shipping"
                     className="w-8 h-8 rounded-full object-cover"
                   />
                 </div>
                 <p className="text-sm font-medium text-gray-900">Free Shipping</p>
-                <p className="text-xs text-gray-600">On orders over ₹20,000</p>
+                <p className="text-xs text-gray-600">On orders over ₹5,000</p>
               </div>
               <div className="text-center">
                 <div className="bg-purple-100 w-12 h-12 rounded-lg flex items-center justify-center mx-auto mb-2">
@@ -92,29 +92,29 @@ const Hero = ({ onViewCollectionClick }: HeroProps) => {
                 <div className="grid grid-cols-2 gap-4">
                   <div className="bg-gray-100 rounded-lg h-32 overflow-hidden">
                     <img 
-                      src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=300&q=80"
-                      alt="Classic Leather Tote"
+                      src="https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=300&q=80"
+                      alt="Chanel No. 5"
                       className="w-full h-full object-cover"
                     />
                   </div>
                   <div className="bg-gray-100 rounded-lg h-32 overflow-hidden">
                     <img 
-                      src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=300&q=80"
-                      alt="Chain Shoulder Bag"
+                      src="https://images.unsplash.com/photo-1588405748880-12d1d2a59d32?auto=format&fit=crop&w=300&q=80"
+                      alt="Dior Sauvage"
                       className="w-full h-full object-cover"
                     />
                   </div>
                   <div className="bg-gray-100 rounded-lg h-32 overflow-hidden">
                     <img 
-                      src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=300&q=80"
-                      alt="Quilted Crossbody"
+                      src="https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=300&q=80"
+                      alt="Tom Ford Black Orchid"
                       className="w-full h-full object-cover"
                     />
                   </div>
                   <div className="bg-gray-100 rounded-lg h-32 overflow-hidden">
                     <img 
-                      src="https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?auto=format&fit=crop&w=300&q=80"
-                      alt="Evening Clutch"
+                      src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad?auto=format&fit=crop&w=300&q=80"
+                      alt="Versace Bright Crystal"
                       className="w-full h-full object-cover"
                     />
                   </div>

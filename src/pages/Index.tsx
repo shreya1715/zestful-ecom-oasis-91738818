@@ -21,7 +21,7 @@ const Index = () => {
         return (
           <div className="pt-20">
             <div className="container mx-auto px-4 py-8">
-              <h1 className="text-3xl font-bold text-gray-900 mb-8">Women's Luxury Purse Collection</h1>
+              <h1 className="text-3xl font-bold text-gray-900 mb-8">Branded Luxury Perfume Collection</h1>
               <ProductGrid />
             </div>
           </div>
@@ -33,7 +33,7 @@ const Index = () => {
           <>
             <Hero onViewCollectionClick={handleViewCollection} />
             <div className="container mx-auto px-4 py-16">
-              <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Featured Luxury Purses</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Featured Luxury Perfumes</h2>
               <ProductGrid featured={true} />
             </div>
           </>

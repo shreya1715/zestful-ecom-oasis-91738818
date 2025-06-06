@@ -12,133 +12,135 @@ const ProductGrid = ({ featured = false }: ProductGridProps) => {
   const [filterCategory, setFilterCategory] = useState("all");
   const [viewMode, setViewMode] = useState<"grid" | "list">("grid");
 
-  // Unique women's luxury purse collection with distinct images and products
+  // Branded perfumes collection with unique images
   const allProducts = [
     {
       id: 1,
-      name: "Classic Leather Tote Bag",
-      price: 25999,
-      originalPrice: 32999,
-      image: "photo-1548036328-c9fa89d128fa", // Large leather tote
-      rating: 4.8,
-      reviews: 124,
-      category: "Tote Bags",
+      name: "Chanel No. 5 Eau de Parfum",
+      price: 8999,
+      originalPrice: 11999,
+      image: "photo-1541643600914-78b084683601", // Elegant perfume bottle
+      rating: 4.9,
+      reviews: 2847,
+      category: "Floral",
       isOnSale: true
     },
     {
       id: 2,
-      name: "Quilted Chain Crossbody",
-      price: 18999,
-      image: "photo-1553062407-98eeb64c6a62", // Quilted crossbody
-      rating: 4.7,
-      reviews: 89,
-      category: "Crossbody"
+      name: "Dior Sauvage Eau de Toilette",
+      price: 7499,
+      image: "photo-1588405748880-12d1d2a59d32", // Blue perfume bottle
+      rating: 4.8,
+      reviews: 1923,
+      category: "Woody"
     },
     {
       id: 3,
-      name: "Gold Chain Shoulder Bag",
-      price: 42999,
-      originalPrice: 55999,
-      image: "photo-1584917865442-de89df76afd3", // Chain shoulder bag
-      rating: 4.9,
-      reviews: 156,
-      category: "Shoulder Bags",
+      name: "Tom Ford Black Orchid",
+      price: 12999,
+      originalPrice: 15999,
+      image: "photo-1594035910387-fea47794261f", // Dark luxury bottle
+      rating: 4.7,
+      reviews: 856,
+      category: "Oriental",
       isOnSale: true
     },
     {
       id: 4,
-      name: "Beaded Evening Clutch",
-      price: 12999,
-      image: "photo-1566576912321-d58ddd7a6088", // Elegant clutch
+      name: "Versace Bright Crystal",
+      price: 5999,
+      image: "photo-1585386959984-a4155224a1ad", // Pink crystal bottle
       rating: 4.6,
-      reviews: 67,
-      category: "Clutches"
+      reviews: 1245,
+      category: "Fresh"
     },
     {
       id: 5,
-      name: "Structured Satchel Bag",
-      price: 28999,
-      image: "photo-1594633312681-425c7b97ccd1", // Professional satchel
-      rating: 4.8,
-      reviews: 203,
-      category: "Satchels"
+      name: "Creed Aventus",
+      price: 18999,
+      image: "photo-1592945403244-b3fbafd7f539", // Luxury perfume with gold accents
+      rating: 4.9,
+      reviews: 743,
+      category: "Fruity"
     },
     {
       id: 6,
-      name: "Mini Round Handbag",
-      price: 22999,
-      image: "photo-1595950653106-6c9ebd614d3a", // Small round bag
-      rating: 4.7,
-      reviews: 91,
-      category: "Mini Bags"
+      name: "Yves Saint Laurent Black Opium",
+      price: 8799,
+      image: "photo-1563170351-be82bc888aa4", // Black designer bottle
+      rating: 4.8,
+      reviews: 1654,
+      category: "Oriental"
     },
     {
       id: 7,
-      name: "Embellished Evening Bag",
-      price: 35999,
-      image: "photo-1571781926291-c477ebfd024b", // Sparkly evening bag
-      rating: 4.9,
-      reviews: 78,
-      category: "Evening Bags"
-    },
-    {
-      id: 8,
-      name: "Soft Leather Bucket Bag",
-      price: 31999,
-      image: "photo-1591561954557-26941169b49e", // Soft bucket bag
+      name: "Dolce & Gabbana Light Blue",
+      price: 6499,
+      originalPrice: 8499,
+      image: "photo-1528740561666-dc2479dc08ab", // Light blue bottle
       rating: 4.5,
-      reviews: 45,
-      category: "Bucket Bags"
-    },
-    {
-      id: 9,
-      name: "Vintage Leather Tote",
-      price: 29999,
-      image: "photo-1590736969955-71cc94901144", // Vintage style tote
-      rating: 4.6,
-      reviews: 112,
-      category: "Tote Bags"
-    },
-    {
-      id: 10,
-      name: "Convertible Crossbody Clutch",
-      price: 16999,
-      originalPrice: 21999,
-      image: "photo-1544966503-7cc5ac882d5d", // Convertible bag
-      rating: 4.4,
-      reviews: 73,
-      category: "Crossbody",
+      reviews: 2103,
+      category: "Fresh",
       isOnSale: true
     },
     {
-      id: 11,
-      name: "Designer Hobo Shoulder Bag",
-      price: 38999,
-      image: "photo-1553062407-98eeb64c6a62", // Hobo style
+      id: 8,
+      name: "Giorgio Armani Acqua di Gio",
+      price: 7299,
+      image: "photo-1557170334-a9632e77c6e4", // Clear bottle with water theme
       rating: 4.7,
-      reviews: 95,
-      category: "Shoulder Bags"
+      reviews: 1876,
+      category: "Aquatic"
+    },
+    {
+      id: 9,
+      name: "Lancôme La Vie Est Belle",
+      price: 9299,
+      image: "photo-1595425970377-c9703cf48b6d", // Pink gradient bottle
+      rating: 4.8,
+      reviews: 1432,
+      category: "Floral"
+    },
+    {
+      id: 10,
+      name: "Paco Rabanne 1 Million",
+      price: 6799,
+      image: "photo-1587017539504-67cfbddac569", // Gold bar-shaped bottle
+      rating: 4.6,
+      reviews: 967,
+      category: "Spicy"
+    },
+    {
+      id: 11,
+      name: "Marc Jacobs Daisy",
+      price: 5799,
+      originalPrice: 7299,
+      image: "photo-1615634260167-c8cdede054de", // White bottle with daisy cap
+      rating: 4.4,
+      reviews: 1289,
+      category: "Floral",
+      isOnSale: true
     },
     {
       id: 12,
-      name: "Crystal Embellished Clutch",
-      price: 19999,
-      image: "photo-1578662996442-48f60103fc96", // Crystal clutch
+      name: "Hermès Terre d'Hermès",
+      price: 11999,
+      image: "photo-1605656673499-aa4df23ede3a", // Orange luxury bottle
       rating: 4.8,
-      reviews: 88,
-      category: "Clutches"
+      reviews: 634,
+      category: "Woody"
     }
   ];
 
   const products = featured ? allProducts.slice(0, 4) : allProducts;
 
-  const categories = ["all", ...Array.from(new Set(products.map(p => p.category.toLowerCase().replace(/\s+/g, '-'))))];
+  const categories = ["all", ...Array.from(new Set(products.map(p => p.category.toLowerCase())))];
 
   const filteredAndSortedProducts = useMemo(() => {
     let filtered = products;
     
     if (filterCategory !== "all") {
-      filtered = products.filter(p => p.category.toLowerCase().replace(/\s+/g, '-') === filterCategory);
+      filtered = products.filter(p => p.category.toLowerCase() === filterCategory);
     }
 
     return filtered.sort((a, b) => {
@@ -180,7 +182,7 @@ const ProductGrid = ({ featured = false }: ProductGridProps) => {
             >
               {categories.map((category) => (
                 <option key={category} value={category}>
-                  {category === "all" ? "All Categories" : category.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')}
+                  {category === "all" ? "All Categories" : category.charAt(0).toUpperCase() + category.slice(1)}
                 </option>
               ))}
             </select>
