@@ -93,28 +93,28 @@ const Hero = ({ onViewCollectionClick }: HeroProps) => {
                   <div className="bg-gray-100 rounded-lg h-32 overflow-hidden">
                     <img 
                       src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=300&q=80"
-                      alt="Luxury Handbag"
+                      alt="Classic Leather Tote"
                       className="w-full h-full object-cover"
                     />
                   </div>
                   <div className="bg-gray-100 rounded-lg h-32 overflow-hidden">
                     <img 
                       src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=300&q=80"
-                      alt="Designer Purse"
+                      alt="Chain Shoulder Bag"
                       className="w-full h-full object-cover"
                     />
                   </div>
                   <div className="bg-gray-100 rounded-lg h-32 overflow-hidden">
                     <img 
                       src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=300&q=80"
-                      alt="Evening Bag"
+                      alt="Quilted Crossbody"
                       className="w-full h-full object-cover"
                     />
                   </div>
                   <div className="bg-gray-100 rounded-lg h-32 overflow-hidden">
                     <img 
-                      src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=300&q=80"
-                      alt="Tote Bag"
+                      src="https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?auto=format&fit=crop&w=300&q=80"
+                      alt="Evening Clutch"
                       className="w-full h-full object-cover"
                     />
                   </div>

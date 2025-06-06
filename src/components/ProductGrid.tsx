@@ -12,14 +12,14 @@ const ProductGrid = ({ featured = false }: ProductGridProps) => {
   const [filterCategory, setFilterCategory] = useState("all");
   const [viewMode, setViewMode] = useState<"grid" | "list">("grid");
 
-  // Women's luxury purse collection with matching images
+  // Unique women's luxury purse collection with distinct images and products
   const allProducts = [
     {
       id: 1,
-      name: "Designer Leather Tote Bag",
+      name: "Classic Leather Tote Bag",
       price: 25999,
       originalPrice: 32999,
-      image: "photo-1548036328-c9fa89d128fa", // Luxury handbag
+      image: "photo-1548036328-c9fa89d128fa", // Large leather tote
       rating: 4.8,
       reviews: 124,
       category: "Tote Bags",
@@ -27,16 +27,16 @@ const ProductGrid = ({ featured = false }: ProductGridProps) => {
     },
     {
       id: 2,
-      name: "Premium Crossbody Purse",
+      name: "Quilted Chain Crossbody",
       price: 18999,
-      image: "photo-1553062407-98eeb64c6a62", // Crossbody bag
+      image: "photo-1553062407-98eeb64c6a62", // Quilted crossbody
       rating: 4.7,
       reviews: 89,
       category: "Crossbody"
     },
     {
       id: 3,
-      name: "Luxury Chain Shoulder Bag",
+      name: "Gold Chain Shoulder Bag",
       price: 42999,
       originalPrice: 55999,
       image: "photo-1584917865442-de89df76afd3", // Chain shoulder bag
@@ -47,48 +47,86 @@ const ProductGrid = ({ featured = false }: ProductGridProps) => {
     },
     {
       id: 4,
-      name: "Elegant Clutch Purse",
+      name: "Beaded Evening Clutch",
       price: 12999,
-      image: "photo-1553062407-98eeb64c6a62", // Clutch bag
+      image: "photo-1566576912321-d58ddd7a6088", // Elegant clutch
       rating: 4.6,
       reviews: 67,
       category: "Clutches"
     },
     {
       id: 5,
-      name: "Designer Satchel Bag",
+      name: "Structured Satchel Bag",
       price: 28999,
-      image: "photo-1548036328-c9fa89d128fa", // Satchel bag
+      image: "photo-1594633312681-425c7b97ccd1", // Professional satchel
       rating: 4.8,
       reviews: 203,
       category: "Satchels"
     },
     {
       id: 6,
-      name: "Luxury Mini Handbag",
+      name: "Mini Round Handbag",
       price: 22999,
-      image: "photo-1584917865442-de89df76afd3", // Mini handbag
+      image: "photo-1595950653106-6c9ebd614d3a", // Small round bag
       rating: 4.7,
       reviews: 91,
       category: "Mini Bags"
     },
     {
       id: 7,
-      name: "Premium Evening Bag",
+      name: "Embellished Evening Bag",
       price: 35999,
-      image: "photo-1553062407-98eeb64c6a62", // Evening bag
+      image: "photo-1571781926291-c477ebfd024b", // Sparkly evening bag
       rating: 4.9,
       reviews: 78,
       category: "Evening Bags"
     },
     {
       id: 8,
-      name: "Designer Bucket Bag",
+      name: "Soft Leather Bucket Bag",
       price: 31999,
-      image: "photo-1548036328-c9fa89d128fa", // Bucket bag
+      image: "photo-1591561954557-26941169b49e", // Soft bucket bag
       rating: 4.5,
       reviews: 45,
       category: "Bucket Bags"
+    },
+    {
+      id: 9,
+      name: "Vintage Leather Tote",
+      price: 29999,
+      image: "photo-1590736969955-71cc94901144", // Vintage style tote
+      rating: 4.6,
+      reviews: 112,
+      category: "Tote Bags"
+    },
+    {
+      id: 10,
+      name: "Convertible Crossbody Clutch",
+      price: 16999,
+      originalPrice: 21999,
+      image: "photo-1544966503-7cc5ac882d5d", // Convertible bag
+      rating: 4.4,
+      reviews: 73,
+      category: "Crossbody",
+      isOnSale: true
+    },
+    {
+      id: 11,
+      name: "Designer Hobo Shoulder Bag",
+      price: 38999,
+      image: "photo-1553062407-98eeb64c6a62", // Hobo style
+      rating: 4.7,
+      reviews: 95,
+      category: "Shoulder Bags"
+    },
+    {
+      id: 12,
+      name: "Crystal Embellished Clutch",
+      price: 19999,
+      image: "photo-1578662996442-48f60103fc96", // Crystal clutch
+      rating: 4.8,
+      reviews: 88,
+      category: "Clutches"
     }
   ];
 
