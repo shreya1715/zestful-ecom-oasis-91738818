@@ -1,34 +1,56 @@
 
 import { ArrowRight, ShoppingBag, Truck } from "lucide-react";
 
-const Hero = () => {
+interface HeroProps {
+  onViewCollectionClick?: () => void;
+}
+
+const Hero = ({ onViewCollectionClick }: HeroProps) => {
+  const handleShopNowClick = () => {
+    if (onViewCollectionClick) {
+      onViewCollectionClick();
+    }
+  };
+
+  const handleViewCollectionClick = () => {
+    if (onViewCollectionClick) {
+      onViewCollectionClick();
+    }
+  };
+
   return (
-    <section className="relative bg-gradient-to-br from-blue-50 via-white to-purple-50 pt-20">
+    <section className="relative bg-gradient-to-br from-pink-50 via-white to-purple-50 pt-20">
       <div className="container mx-auto px-4 py-16 lg:py-24">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Hero Content */}
           <div className="space-y-8">
             <div className="space-y-4">
               <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                Shop the
-                <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                  {" "}Future{" "}
+                Luxury
+                <span className="bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent">
+                  {" "}Purse{" "}
                 </span>
-                Today
+                Collection
               </h1>
               <p className="text-xl text-gray-600 leading-relaxed">
-                Discover our curated collection of premium products designed to elevate your lifestyle.
-                Quality, style, and innovation in every purchase.
+                Discover our exquisite collection of women's luxury purses. Crafted with premium materials
+                and timeless elegance for the modern woman.
               </p>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-lg font-semibold hover:shadow-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2">
+              <button 
+                onClick={handleShopNowClick}
+                className="bg-gradient-to-r from-pink-600 to-purple-600 text-white px-8 py-4 rounded-lg font-semibold hover:shadow-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2"
+              >
                 <ShoppingBag className="w-5 h-5" />
                 <span>Shop Now</span>
                 <ArrowRight className="w-5 h-5" />
               </button>
-              <button className="border border-gray-300 text-gray-700 px-8 py-4 rounded-lg font-semibold hover:bg-gray-50 transition-colors">
+              <button 
+                onClick={handleViewCollectionClick}
+                className="border border-gray-300 text-gray-700 px-8 py-4 rounded-lg font-semibold hover:bg-gray-50 transition-colors"
+              >
                 View Collection
               </button>
             </div>
@@ -44,7 +66,7 @@ const Hero = () => {
                   />
                 </div>
                 <p className="text-sm font-medium text-gray-900">Free Shipping</p>
-                <p className="text-xs text-gray-600">On orders over ₹2000</p>
+                <p className="text-xs text-gray-600">On orders over ₹20,000</p>
               </div>
               <div className="text-center">
                 <div className="bg-purple-100 w-12 h-12 rounded-lg flex items-center justify-center mx-auto mb-2">
@@ -65,34 +87,34 @@ const Hero = () => {
 
           {/* Hero Image */}
           <div className="relative">
-            <div className="bg-gradient-to-br from-blue-200 to-purple-200 rounded-2xl p-8 transform rotate-3 hover:rotate-0 transition-transform duration-500">
+            <div className="bg-gradient-to-br from-pink-200 to-purple-200 rounded-2xl p-8 transform rotate-3 hover:rotate-0 transition-transform duration-500">
               <div className="bg-white rounded-xl p-6 shadow-xl">
                 <div className="grid grid-cols-2 gap-4">
                   <div className="bg-gray-100 rounded-lg h-32 overflow-hidden">
                     <img 
-                      src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=300&q=80"
-                      alt="Headphones"
+                      src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=300&q=80"
+                      alt="Luxury Handbag"
                       className="w-full h-full object-cover"
                     />
                   </div>
                   <div className="bg-gray-100 rounded-lg h-32 overflow-hidden">
                     <img 
-                      src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=300&q=80"
-                      alt="T-shirt"
+                      src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=300&q=80"
+                      alt="Designer Purse"
                       className="w-full h-full object-cover"
                     />
                   </div>
                   <div className="bg-gray-100 rounded-lg h-32 overflow-hidden">
                     <img 
-                      src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=300&q=80"
-                      alt="Smart Watch"
+                      src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=300&q=80"
+                      alt="Evening Bag"
                       className="w-full h-full object-cover"
                     />
                   </div>
                   <div className="bg-gray-100 rounded-lg h-32 overflow-hidden">
                     <img 
-                      src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&q=80"
-                      alt="Desk Lamp"
+                      src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=300&q=80"
+                      alt="Tote Bag"
                       className="w-full h-full object-cover"
                     />
                   </div>
