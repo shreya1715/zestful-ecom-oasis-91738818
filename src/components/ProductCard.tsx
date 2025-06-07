@@ -17,16 +17,17 @@ interface Product {
 
 interface ProductCardProps {
   product: Product;
+  onProductClick?: (product: Product) => void;
 }
 
-const ProductCard = ({ product }: ProductCardProps) => {
+const ProductCard = ({ product, onProductClick }: ProductCardProps) => {
   const [isLiked, setIsLiked] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const { addToCart } = useCart();
 
-  const handleAddToCart = async () => {
+  const handleAddToCart = async (e: React.MouseEvent) => {
+    e.stopPropagation();
     setIsLoading(true);
-    // Simulate API call
     await new Promise(resolve => setTimeout(resolve, 500));
     addToCart({
       id: product.id,
@@ -37,12 +38,26 @@ const ProductCard = ({ product }: ProductCardProps) => {
     setIsLoading(false);
   };
 
+  const handleWishlistClick = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    setIsLiked(!isLiked);
+  };
+
+  const handleCardClick = () => {
+    if (onProductClick) {
+      onProductClick(product);
+    }
+  };
+
   const discountPercentage = product.originalPrice 
     ? Math.round(((product.originalPrice - product.price) / product.originalPrice) * 100)
     : 0;
 
   return (
-    <div className="group bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100">
+    <div 
+      className="group bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 cursor-pointer"
+      onClick={handleCardClick}
+    >
       {/* Product Image */}
       <div className="relative overflow-hidden">
         <div className="aspect-square bg-gray-100">
@@ -75,7 +90,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
 
         {/* Wishlist Button */}
         <button
-          onClick={() => setIsLiked(!isLiked)}
+          onClick={handleWishlistClick}
           className="absolute top-3 right-3 p-2 bg-white/90 rounded-full hover:bg-white transition-colors"
         >
           <Heart 
