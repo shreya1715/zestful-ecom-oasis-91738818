@@ -7,6 +7,10 @@ import ShoppingCart from "@/components/ShoppingCart";
 import AdminDashboard from "@/components/AdminDashboard";
 import FAQ from "@/components/FAQ";
 import Contact from "@/components/Contact";
+import SignIn from "@/components/SignIn";
+import CreateAccount from "@/components/CreateAccount";
+import OrderHistory from "@/components/OrderHistory";
+import Wishlist from "@/components/Wishlist";
 import { CartProvider } from "@/components/CartContext";
 
 const Index = () => {
@@ -61,6 +65,14 @@ const Index = () => {
         return <FAQ />;
       case "admin":
         return <AdminDashboard />;
+      case "sign-in":
+        return <SignIn />;
+      case "create-account":
+        return <CreateAccount />;
+      case "order-history":
+        return <OrderHistory />;
+      case "wishlist":
+        return <Wishlist />;
       default:
         return (
           <>
@@ -142,10 +154,26 @@ const Index = () => {
               <div>
                 <h4 className="font-semibold mb-4">Account</h4>
                 <ul className="space-y-2 text-gray-400">
-                  <li>Sign In</li>
-                  <li>Create Account</li>
-                  <li>Order History</li>
-                  <li>Wishlist</li>
+                  <li>
+                    <button onClick={() => setCurrentView("sign-in")} className="hover:text-white transition-colors">
+                      Sign In
+                    </button>
+                  </li>
+                  <li>
+                    <button onClick={() => setCurrentView("create-account")} className="hover:text-white transition-colors">
+                      Create Account
+                    </button>
+                  </li>
+                  <li>
+                    <button onClick={() => setCurrentView("order-history")} className="hover:text-white transition-colors">
+                      Order History
+                    </button>
+                  </li>
+                  <li>
+                    <button onClick={() => setCurrentView("wishlist")} className="hover:text-white transition-colors">
+                      Wishlist
+                    </button>
+                  </li>
                 </ul>
               </div>
             </div>
